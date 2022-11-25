@@ -1,6 +1,11 @@
 <template>
   <div class="app">
     <header>
+      <div class="title">
+        <img src="./assets/heart.svg" alt="site local" />
+        <h1>Hyrule Jobs</h1>
+        <img src="./assets/heart.svg" alt="site local" />
+      </div>
       <div class="order">
         <button @click="handleClick('title')">order by title</button>
         <button @click="handleClick('salary')">order by salary</button>
@@ -87,5 +92,19 @@ button:hover {
   color: #d9e9f0;
   border: 3px solid #094c66;
   background: #1a597e;
+}
+
+header .title {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  width: 60px;
+  margin: 20px;
+}
+
+header h1 {
+  font-size: 3em;
 }
 </style>
